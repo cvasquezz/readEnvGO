@@ -1,4 +1,4 @@
-module github.com/cvasquez/readEnvGO
+module github.com/cvasquezz/readEnvGO
 
 go 1.16
 
