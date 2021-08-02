@@ -17,7 +17,7 @@ type User struct {
 	Nombre string
 }
 
-func (w *Wea) ReadEnv() {
+func (w *Wea) ReadEnv(u *User) {
 	err := godotenv.Load()
 	if err != nil {
 		log.Fatal("Error loading .env file")
@@ -27,7 +27,7 @@ func (w *Wea) ReadEnv() {
 	if w.Default {
 		fmt.Println(w.User)
 	} else {
-		user := User{}
-		fmt.Printf("User: %v\n", user)
+
+		fmt.Printf("User: %v\n", u)
 	}
 }
